@@ -8,20 +8,9 @@ Welcome to my Security Analyst Internship portfolio! This repository includes fo
 ---
 
 ## 📁 Table of Contents
+1. 🔍 [Task 1: Network Scanning with Nmap]
+2. ⚙️ [Task 2: Web Vulnerability Scanning with Nikto]
+3. 📄 [Task 3: Report on Common Network Security Threats]
+4. 👥 [Task 4: Report on Social Engineering Attacks]
 
-1. 🔍 [Task 1: Network Scanning with Nmap](#task-1-network-scanning-with-nmap)
-2. ⚙️ [Task 2: Web Vulnerability Scanning with Nikto](#task-2-web-vulnerability-scanning-with-nikto)
-3. 📄 [Task 3: Report on Common Network Security Threats](#task-3-report-on-common-network-security-threats)
-4. 👥 [Task 4: Report on Social Engineering Attacks](#task-4-report-on-social-engineering-attacks)
-
----
-
-## 🔍 Task 1: Network Scanning with Nmap
-
-**Objective:** Perform a basic scan using Nmap to identify open ports, running services, and potential vulnerabilities on a target machine (localhost or virtual lab setup).
-
-**Tool Used:** Nmap  
-**Commands Used:**  
-```bash
-nmap -sS -sV -T4 127.0.0.1
 
