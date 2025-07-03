@@ -115,6 +115,8 @@ Status: active
 Below is proof that the configuration was successful:
 
 
+
+
 🧠 Notes
 SSH (port 22) must be allowed before enabling UFW to prevent lockout.
 
