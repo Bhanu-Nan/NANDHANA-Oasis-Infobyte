@@ -9,7 +9,7 @@ Welcome to my Security Analyst Internship portfolio! This repository includes fo
 
 ## 📁 Table of Contents
 1. 🔍 [Task 1: Network Scanning with Nmap]
-2. ⚙️ [Task 2: Web Vulnerability Scanning with Nikto]
+2. ⚙️ [Task 2: Basic Firewall Configuration with UFW]
 3. 📄 [Task 3: Report on Common Network Security Threats]
 4. 👥 [Task 4: Report on Social Engineering Attacks]
 
@@ -70,6 +70,56 @@ PORT     STATE SERVICE     VERSION
  ![Screenshot 2025-06-18 175036](https://github.com/user-attachments/assets/1f0ff2e2-0065-42d7-bf34-eaeebeb9217b)
  ![Screenshot 2025-06-18 175149](https://github.com/user-attachments/assets/5488aef2-73b1-4690-ba43-2ad24fd8aa82)
  ![Screenshot 2025-06-18 175214](https://github.com/user-attachments/assets/c8009564-4709-4b0c-b3fc-b89b98199404)
+
+
+ # 🔥 Task 2 — Basic Firewall Configuration with UFW
+
+ 🎯 Goal
+- Allow incoming **SSH (port 22)**
+- Deny incoming **HTTP (port 80)**
+- Display active UFW firewall rules
+
+## 🛠️ Steps Performed
+
+1. Installed UFW using:
+   sudo apt update && sudo apt install ufw -y
+
+2. Reset UFW to remove old rules:
+   sudo ufw reset
+
+3. Set default policies:
+   sudo ufw default deny incoming
+   sudo ufw default allow outgoing
+
+4. Allowed SSH (port 22):
+   sudo ufw allow 22
+
+5. Denied HTTP (port 80):
+   sudo ufw deny 80
+ 
+6. Enabled UFW:
+   sudo ufw enable
+
+7. Checked current rules:
+   sudo ufw status numbered
+✅ Output Summary
+Status: active
+
+     To                         Action      From
+     --                         ------      ----
+[ 1] 22                         ALLOW IN    Anywhere
+[ 2] 80                         DENY IN     Anywhere
+[ 3] 22 (v6)                    ALLOW IN    Anywhere (v6)
+[ 4] 80 (v6)                    DENY IN     Anywhere (v6)
+📸 Screenshot
+Below is proof that the configuration was successful:
+
+
+🧠 Notes
+SSH (port 22) must be allowed before enabling UFW to prevent lockout.
+
+UFW handles IPv6 rules by default if IPv6 is enabled.
+
 
 
 
