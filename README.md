@@ -114,6 +114,9 @@ Status: active
 📸 Screenshot
 Below is proof that the configuration was successful:
 ![UFW Screenshot](./Screenshot%202025-07-03%20195258.png)
+![Firewall Rules - Screenshot 1](https://raw.githubusercontent.com/Bhanu-Nan/NANDHANA-Oasis-Infobyte/main/Task-2-UFW/Screenshot%202025-07-03%20195323.png)
+![Firewall Rules - Screenshot 2](https://raw.githubusercontent.com/Bhanu-Nan/NANDHANA-Oasis-Infobyte/main/Task-2-UFW/Screenshot%202025-07-03%20200409.png)
+
 
 🧠 Notes
 SSH (port 22) must be allowed before enabling UFW to prevent lockout.
