@@ -113,9 +113,7 @@ Status: active
 [ 4] 80 (v6)                    DENY IN     Anywhere (v6)
 📸 Screenshot
 Below is proof that the configuration was successful:
-
-
-
+![UFW Screenshot](./Screenshot%202025-07-03%20195258.png)
 
 🧠 Notes
 SSH (port 22) must be allowed before enabling UFW to prevent lockout.
